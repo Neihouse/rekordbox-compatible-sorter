@@ -1,34 +1,43 @@
 # Local DJ Music Library Management System
 
-This system is designed to help DJs automatically organize and manage their music libraries on their laptops, ensuring compatibility with DJ equipment.
+This system is designed to help DJs organize and manage their music libraries on their laptops, ensuring compatibility with DJ equipment.
 
 ## Features
 
 - Lightweight, executable script to sort music files by compatibility.
-- Simple system for organizing music files into user-defined folders based on genre, BPM, or key.
-- Standalone script that runs locally on a laptop with minimal setup.
+- Simple system for organizing music files for easy access during DJ sets.
+- Runs locally on a laptop without the need for complex setups or external dependencies.
+- Uses Python's built-in libraries and pydub for audio file metadata reading.
+- Command-line interface for inputting compatibility criteria.
+- Organizes files into user-defined folders based on genre, BPM, or key.
+- Basic logging of operations.
 
 ## Requirements
 
 - Python 3.x
-- `os`, `shutil` for file operations
-- `pydub` for reading audio file metadata
+- pydub library
 
 ## Usage
 
-1. Run `main.py` through the command line.
-2. Input compatibility criteria when prompted.
-3. Specify the music directory to be organized.
-4. The script will scan the directory, identify compatible files, and organize them based on the input criteria.
+1. Input compatibility criteria through the CLI.
+2. The script scans the specified music directory.
+3. Files that match the criteria are segregated and organized.
+4. Actions are logged for user review.
 
-## Logging
+## Setup
 
-The script logs its operations to `activity.log`, which can be reviewed for a summary of actions taken.
+1. Install Python 3.x on your laptop.
+2. Install the pydub library using `pip install pydub`.
+3. Run the script from the command line with the required arguments.
 
 ## Error Handling
 
-The script includes basic error handling for common issues such as file access permissions, non-existent directories, and unsupported file formats.
+The system includes basic error handling for common issues such as file access permissions, non-existent directories, and unsupported file formats.
 
-## Development
+## Contributing
 
-To contribute to this project, please create a branch and submit a pull request for review.
+Contributions are welcome. Please open an issue or submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
