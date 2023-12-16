@@ -2816,3 +2816,25 @@ ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers
 2023-12-16 12:28:41,803 - INFO - Organized files into /Users/chanceneihouse/Library/Saved Searches/wav audio.savedSearch
 2023-12-16 12:29:57,492 - INFO - Organized files into /Users/chanceneihouse/Library/Saved Searches/wav audio.savedSearch
 2023-12-16 12:30:45,675 - INFO - Organized files into /Users/chanceneihouse/Library/Saved Searches/wav audio.savedSearch
+2023-12-16 12:42:58,350 - INFO - Organized files into /Users/chanceneihouse/Library/Saved Searches/wav audio.savedSearch
+2023-12-16 12:44:44,199 - INFO - Organized files into /Users/chanceneihouse/Library/Saved Searches/wav audio.savedSearch
+2023-12-16 12:46:57,442 - INFO - Organized files into /Users/chanceneihouse/Music/Spotify Music
+2023-12-16 13:05:29,874 - ERROR - Error: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers
+  built with Apple clang version 15.0.0 (clang-1500.0.40.1)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/6.0_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      58.  2.100 / 58.  2.100
+  libavcodec     60.  3.100 / 60.  3.100
+  libavformat    60.  3.100 / 60.  3.100
+  libavdevice    60.  1.100 / 60.  1.100
+  libavfilter     9.  3.100 /  9.  3.100
+  libswscale      7.  1.100 /  7.  1.100
+  libswresample   4. 10.100 /  4. 10.100
+  libpostproc    57.  1.100 / 57.  1.100
+[mp3 @ 0x7fbf62b211c0] Format mp3 detected only with low score of 24, misdetection possible!
+[mp3 @ 0x7fbf62b211c0] Failed to read frame size: Could not seek to 1061.
+/Users/chanceneihouse/Music/Spotify Music/Tantra/ Palomita.orig.mp3: Invalid argument
+

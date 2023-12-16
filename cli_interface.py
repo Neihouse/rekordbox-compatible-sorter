@@ -1,20 +1,15 @@
-import sys
-
-# CLI Interface for user input
+import re
 
 class CLIInterface:
-    @staticmethod
-    def get_user_input():
-        """Collects compatibility criteria from the user.
+    def get_user_input(self):
+        # Capture compatibility criteria and organization preferences from the user
+        criteria = {}
+        criteria['acceptable_formats'] = input('Enter acceptable file formats (comma separated, e.g., mp3, wav): ').split(',')
+        criteria['sample_rates'] = list(map(int, input('Enter acceptable sample rates (comma separated, e.g., 44100, 48000): ').split(',')))
+        criteria['organization_method'] = input('Enter organization method (e.g., genre, BPM, key): ')
+        return criteria
 
-        Returns:
-            dict: User input criteria for file formats and sample rates.
-        """
-        print("Please enter the compatible file formats (comma separated, e.g., mp3, wav): ", end='')
-        file_formats = input().split(',')
-        print("Please enter the compatible sample rates (comma separated, e.g., 44100, 48000): ", end='')
-        sample_rates = input().split(',')
-        return {
-            'file_formats': [format.strip().lower() for format in file_formats],
-            'sample_rates': [int(rate.strip()) for rate in sample_rates]
-        }
+    def display_instructions(self):
+        # Guide the user through the input process
+        print('Welcome to the Local DJ Music Library Management System.')
+        print('Please enter the compatibility criteria and organization preferences.')

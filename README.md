@@ -1,38 +1,39 @@
-# Rekordbox-Compatible Sorter
+# Local DJ Music Library Management System
 
-This project provides a Python script for DJs to automatically organize and manage their music libraries, ensuring compatibility with Rekordbox DJ software and equipment.
+This system is designed to help DJs organize and manage their music libraries on their laptops, ensuring compatibility with DJ equipment.
 
 ## Features
 
-- Sort music files by compatibility based on user-defined criteria (e.g., file formats and sample rates).
-- Organize music files into user-defined folders based on genre, BPM, or key.
-- Run the entire system locally on a laptop without the need for complex setups or external dependencies.
-- Use Python 3.x and `pydub` for audio file processing.
-- Command-line interface for easy use.
-- Basic logging of operations.
-- Basic error handling for common file-related issues.
+- Lightweight, executable script to sort music files by compatibility.
+- Simple system for organizing music files, ensuring easy access during DJ sets.
+- Runs locally on a laptop without the need for complex setups or external dependencies.
+- Uses Python 3.x for the programming language.
+- Utilizes Python's built-in libraries (os, shutil) for file operations.
+- Employs pydub for reading audio file metadata to determine compatibility.
+- Command-line interface (CLI) for user input.
+- Organizes files into user-defined folders based on genre, BPM, or key.
+- Basic logging of operations for user review.
+- Basic error handling for common issues.
 
-## Getting Started
+## How to Use
 
-### Prerequisites
+1. Run the script `main.py` from the command line.
+2. Follow the on-screen instructions to input compatibility criteria and organization preferences.
+3. Provide the path to your music directory when prompted.
+4. The script will scan the directory, filter compatible files, and organize them accordingly.
+5. Review the `activity.log` file for a record of operations performed by the script.
+
+## Requirements
 
 - Python 3.x
-- `pydub` library
+- pydub library
 
-### Installation
+## Setup
 
-1. Clone the repository to your local machine.
-2. Install the `pydub` library using `pip install pydub` if not already installed.
-
-### Usage
-
-1. Navigate to the cloned repository directory.
-2. Run the script with `python3 main.py`.
-3. Follow the prompts to input compatibility criteria and destination folder for sorted files.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or create an issue for any bugs or feature requests.
+1. Ensure Python 3.x is installed on your laptop.
+2. Install the pydub library using `pip install pydub`.
+3. Clone or download this repository to your local machine.
+4. Navigate to the script's directory and run `python3 main.py`.
 
 ## License
 

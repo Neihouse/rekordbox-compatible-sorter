@@ -1,18 +1,13 @@
-import os
 from pydub import AudioSegment
 from error_handler import ErrorHandler
+import os
 
-# Sorting engine for music files
-
-class TrackSorter:
-    def __init__(self, compatibility_criteria, music_directory):
+class TrackSortingService:
+    def __init__(self, compatibility_criteria):
         self.compatibility_criteria = compatibility_criteria
-        self.music_directory = music_directory
 
-    def scan_directory(self, directory=None):
+    def scan_directory(self, directory):
         # Recursively scan the specified music directory for files
-        if directory is None:
-            directory = self.music_directory
         return [os.path.join(dp, f) for dp, dn, filenames in os.walk(directory) for f in filenames if not f.startswith('.') and not f.endswith('.pyc') and not f.endswith('.py')]
 
     def check_compatibility(self, file_path):
@@ -27,10 +22,10 @@ class TrackSorter:
             ErrorHandler.handle_error(f'Unsupported file format or error processing file: {file_path}')
             return False
 
-    def sort_files(self):
+    def sort_files(self, directory):
         # Organize files into folders based on user-defined criteria
         compatible_files = []
-        files = self.scan_directory()
+        files = self.scan_directory(directory)
         for file_path in files:
             if self.check_compatibility(file_path):
                 compatible_files.append(file_path)

@@ -1,11 +1,8 @@
-# Error Handler
+import logging
 
 class ErrorHandler:
     @staticmethod
-    def handle_error(error_message):
-        """Handles common file and directory errors by printing an error message.
-
-        Args:
-            error_message (str): The error message to be handled.
-        """
-        print(f'Error: {error_message}')
+    def handle_error(error):
+        # Handle common errors and exceptions
+        logging.error(f'Error: {error}')
+        print(f'Error: {error}')
