@@ -1,23 +1,34 @@
-# Local DJ Music Library Management System
+# Rekordbox-Compatible Sorter
 
-This project provides a lightweight, executable script for DJs to automatically organize and manage their music libraries on their laptops, ensuring compatibility with DJ equipment.
+This project provides a Python script for DJs to automatically organize and manage their music libraries, ensuring compatibility with Rekordbox DJ software and equipment.
 
 ## Features
 
 - Sort music files by compatibility based on user-defined criteria (e.g., file formats and sample rates).
 - Organize music files into user-defined folders based on genre, BPM, or key.
-- Run the entire system locally without the need for complex setups or external dependencies.
+- Run the entire system locally on a laptop without the need for complex setups or external dependencies.
 - Use Python 3.x and `pydub` for audio file processing.
 - Command-line interface for easy use.
 - Basic logging of operations.
 - Basic error handling for common file-related issues.
 
-## Usage
+## Getting Started
 
-1. Ensure you have Python 3.x installed on your laptop.
-2. Install the `pydub` library using `pip install pydub`.
-3. Run the script via the command line with `python3 main.py`.
-4. Follow the prompts to input compatibility criteria and destination folder for sorted files.
+### Prerequisites
+
+- Python 3.x
+- `pydub` library
+
+### Installation
+
+1. Clone the repository to your local machine.
+2. Install the `pydub` library using `pip install pydub` if not already installed.
+
+### Usage
+
+1. Navigate to the cloned repository directory.
+2. Run the script with `python3 main.py`.
+3. Follow the prompts to input compatibility criteria and destination folder for sorted files.
 
 ## Contributing
 
