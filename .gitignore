@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+
+# Python cache files
+__pycache__/
+
+# Log files
+activity.log
+
+# Backup files
+backup/

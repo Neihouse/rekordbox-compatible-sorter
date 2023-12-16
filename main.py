@@ -24,7 +24,6 @@ def main():
     sorted_files = music_sorter.sort_files()
 
     # Get user input for organization
-    # Get user input for organization criteria
     print("Please enter the destination folder name: ", end='')
     destination_folder = input().strip()
     if not os.path.exists(destination_folder):

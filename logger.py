@@ -8,5 +8,9 @@ class Logger:
         logging.basicConfig(filename=self.log_file, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     def log_operation(self, message):
-        # Logs operations to a text file
+        """Logs operations to a text file.
+
+        Args:
+            message (str): The message to log.
+        """
         logging.info(message)
